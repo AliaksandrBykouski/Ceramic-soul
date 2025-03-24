@@ -1,7 +1,9 @@
 @use "/src/sass/base/variables" as *;
 .header {
+  &__top {
     display: flex;
     justify-content: space-between;
+    }
   &__logo {
     width: 100px;
     height: 100px;
@@ -20,6 +22,9 @@
       }
     }
   }
+  &__nav {
+    display: none;
+  }
 }
 
 .burger {
@@ -33,5 +38,49 @@
     height: 2px;
     background-color: $dark;
     display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    &__nav {
+      display: block;
+      margin-top: 20px;
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-left: 0;
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+    &__link {
+      text-decoration: none;
+      color: $dark;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: normal;
+      text-transform: uppercase;
+    }
+  }
+  .burger {
+  visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header {
+    &__logo {
+      width: 150px;
+      height: 150px;
+    }
+    &__nav {
+      margin-top: 36px;
+      ul {
+        gap: 60px;
+      }
+    }
   }
 }

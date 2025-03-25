@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -66,6 +66,35 @@
 					</div>
 				</div>
 			</div>
+		</section>
+		<section class="get">
+			<div class="container get__container">
+				<h2 class="title-h2 get__title">get in touch</h2>
+				<div class="get__wrapper">
+					<img src="/src/img/form/tea.jpg" alt="tea" class="get__img">
+					<form action="#" class="get__form">
+						<fieldset class="get__fieldset">
+							<div class="get__input-block">
+								<label class="get__label" for="name">Name</label>
+								<input class="get__input" type="text" placeholder="Name" id="name" name="name" required>
+							</div>
+							<div class="get__input-block">
+								<label class="get__label" for="email">Email</label>
+								<input class="get__input" type="email" placeholder="Email" id="email" name="email" required>
+							</div>
+						</fieldset>
+						<label class="get__label" for="question">Question</label>
+						<textarea class="get__textarea" name="question" id="question" placeholder="Question"></textarea>
+						<label for="checkbox" class="get__label get__label-checkbox">
+							<input required type="checkbox" name="checkbox" id="checkbox" class="get__checkbox">
+							I agree with the <a href="#"> terms</a>
+						</label>
+						<button class="btn-send get__btn">send request</button>
+					</form>
+				</div>
+				<img src="/src/img/form/vase.png" alt="vase" class="get__img-small">
+			</div>
+
 		</section>
 		<script type="module" src="/src/js/script.js"></script>
 	</body>

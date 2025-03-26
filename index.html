@@ -98,32 +98,91 @@
 		<section class="works">
 			<div class="container">
 				<h2 class="title-h2 works__title">check out our works</h2>
-				<div class="swiper works__swiper">
-					<!-- Additional required wrapper -->
-					<div class="swiper-wrapper">
-						<!-- Slides -->
-						<div class="swiper-slide">
-							<img src="/src/img/works/tea-1.jpg" alt="tea">
+				<div class="works__wrapper">
+					<div class="swiper works__swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<img src="/src/img/works/tea-1.jpg" alt="tea">
+							</div>
+							<div class="swiper-slide">
+								<img src="/src/img/works/tea-2.jpg" alt="tea">
+							</div>
+							<div class="swiper-slide">
+								<img src="/src/img/works/tea-3.jpg" alt="tea">
+							</div>
+							<div class="swiper-slide">
+								<img src="/src/img/works/tea-2.jpg" alt="tea">
+							</div>
 						</div>
-						<div class="swiper-slide">
-							<img src="/src/img/works/tea-2.jpg" alt="tea">
-						</div>
-						<div class="swiper-slide">
-							<img src="/src/img/works/tea-3.jpg" alt="tea">
-						</div>
-						<div class="swiper-slide">
-							<img src="/src/img/works/tea-2.jpg" alt="tea">
-						</div>
+
 					</div>
 					<!-- If we need pagination -->
 					<div class="swiper-pagination"></div>
-
 					<!-- If we need navigation buttons -->
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
+					<span class="icon-left-open works__swiper-nav"></span>
+					<span class="icon-right-open works__swiper-nav"></span>
 				</div>
 			</div>
 		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__forms">
+						<h4 class="footer__forms-title title-h4">newsletter</h4>
+						<div class="footer__forms-subtitle">Keep up to date with news and promotions</div>
+						<form class="footer__forms">
+							<div class="footer__forms-block">
+								<label for="footer" class="get__label footer__forms-label">Enter your e-mail</label>
+								<input type="email" id="footer" class="footer__forms-input" required>
+								<label for="checkbox" class="get__label get__label-checkbox footer__forms-checkbox">
+									<input required type="checkbox" name="checkbox" id="checkbox-footer " class="get__checkbox ">
+									I agree with the <a href="#"> terms</a>
+								</label>
+								<button type="submit" class="submit">submit</button>
+							</div>
+						</form>
+					</div>
+					<div class="footer__body">
+						<div class="footer__info">
+							<div class="footer__info-element">
+								<div class="footer__info-item">
+									<h4 class=" footer__forms-title title-h4">discover</h4>
+									<ul class="footer__info-list">
+										<li class="footer__info-link"><a href="#">About Us</a></li>
+										<li class="footer__info-link"><a href="#">Blog</a></li>
+									</ul>
+								</div>
+								<div class="footer__info-item">
+									<h4 class="footer__forms-title title-h4">shopping</h4>
+									<ul class="footer__info-list">
+										<li class="footer__info-link"><a href="#">Catalog</a></li>
+									</ul>
+								</div>
+								<div class="footer__info-item">
+									<h4 class="footer__forms-title title-h4">information</h4>
+									<ul class="footer__info-list">
+										<li class="footer__info-link"><a href="#">Terms and Conditions</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="footer__social">
+							<h4 class="footer__forms-title title-h4">follow us</h4>
+							<div class="footer__social-links">
+								<a href="#" class="footer__social-link icon-facebook"></a>
+								<a href="#" class="footer__social-link icon-instagram"></a>
+								<a href="#" class="footer__social-link icon-pinterest-circled"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copy">
+					<p>© Copyright 2025, Ceramic soul.</p>
+				</div>
+			</div>
+		</footer>
 		<script type="module" src="/src/js/script.js"></script>
 	</body>
 </html>

@@ -15,6 +15,10 @@
   @include title;
   font-size: 20px;
 }
+.title-h4 {
+  @include title;
+  font-size: 16px;
+}
 
 @media screen and (min-width: 768px) {
   .title-h2 {
